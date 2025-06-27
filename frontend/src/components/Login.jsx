@@ -3,12 +3,14 @@ import { useState } from 'react';
 import { Label } from './ui/label';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
-import Logo from './shared/logo';
+// import Logo from './shared/logo';
+import Logo from "../components/shared/Logo";
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'sonner';
 import { useDispatch } from 'react-redux';
 import { setAuthUser } from '@/redux/authSlice';
+
 
 const Login = () => {
     const [input, setInput] = useState({
@@ -38,7 +40,7 @@ const Login = () => {
               if(res.data.success){
                 dispatch(setAuthUser(res.data.user));
                 toast.success(res.data.message);
-                navigate("/");
+                navigate("/home");
               }
         }catch(error){
             toast.error(error.response.data.message);
