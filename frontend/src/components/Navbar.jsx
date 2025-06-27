@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Avatar, AvatarImage } from './ui/avatar';
 import { Popover, PopoverTrigger, PopoverContent } from './ui/popover';
 import { Button } from './ui/button';
-import Logo from './shared/logo';
+import Logo from "../components/shared/Logo";
 import axios from 'axios';
 import { toast } from 'sonner';
 import { useSelector } from 'react-redux';
