@@ -64,7 +64,7 @@ const updateExpense = ({expense}) => {
     try {
       setLoading(true);
       const res = await axios.put(
-        `http://localhost:8000/api/v1/expense/update/${expense._id}`,
+        `https://expensetracker-1-8r32.onrender.com/api/v1/expense/update/${expense._id}`,
         fromData ,
         {
           headers: {
