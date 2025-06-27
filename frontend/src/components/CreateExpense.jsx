@@ -56,7 +56,7 @@ const CreateExpense = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:8000/api/v1/expense/add",
+        "https://expensetracker-mp5y.onrender.com/api/v1/expense/add",
         fromData ,
         {
           headers: {

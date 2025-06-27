@@ -15,7 +15,7 @@ const Navbar = () => {
     const logoutHandler = async () => {
         try {
             // Network request
-            const res = await axios.get("http://localhost:8000/api/v1/user/logout", { withCredentials: true });
+            const res = await axios.get("https://expensetracker-mp5y.onrender.com/api/v1/user/logout", { withCredentials: true });
             if (res.data.success) {
                 navigate("/login");
                 toast.success(res.data.message);
