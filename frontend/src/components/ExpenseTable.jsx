@@ -62,7 +62,7 @@ import { toast } from "sonner";
 
     const removeExpenseHandler = async (expenseId) => {
         try{
-            const res = await axios.delete(`http://localhost:8000/api/v1/expense/remove/${expenseId}`);
+            const res = await axios.delete(`https://expensetracker-1-8r32.onrender.com/api/v1/expense/remove/${expenseId}`);
             if(res.data.success){
                 toast.success(res.data.message);
                 const filteredExpenses = localExpense.filter(expense => expense._id !== expenseId);

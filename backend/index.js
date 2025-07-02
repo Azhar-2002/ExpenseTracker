@@ -19,7 +19,7 @@ const corsOptions = {
   origin: "https://expensetracker-1-8r32.onrender.com",
   credentials: true, // Ensure this is correctly spelled
 };
-axios.get("https://your-api.com/data", { withCredentials: true });
+//axios.get("https://your-api.com/data", { withCredentials: true });
 
 app.use(cors(corsOptions));
 
